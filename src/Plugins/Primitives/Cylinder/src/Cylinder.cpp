@@ -10,12 +10,6 @@
 
 namespace rt
 {
-    /**
-     * @brief compute if the ray pass though the primitive or not
-     * @param Ray the ray to compute
-     * @return -1 if the ray doesn't pass through the primitive or
-     * a float corresponding to the distance between the origin of the ray and the hit point
-    */
     float Cylinder::hit(const math::Ray &ray) const
     {
         math::Vector3 oc = ray.origin - _origin;
